@@ -35,7 +35,7 @@ def get_all_news():
             title = (card.find('span', itemprop='headline').text)
             article = (card.find('div', itemprop='articleBody').text)
             d['title'] = title
-            d['aritcle'] = article
+            d['article'] = article
             d['category'] = url.split('/')[-1]
             l.append(d)
     return l
